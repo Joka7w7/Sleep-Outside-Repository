@@ -4,19 +4,18 @@ import ProductData from "./ProductData.mjs";
 const dataSource = new ProductData("tents");
 
 function addProductToCart(product) {
-  let cartItems = getLocalStorage("so-cart") || [];
+  const cartItems = getLocalStorage("so-cart") || []; // get cart array of items from local storage if null set to empty array
   cartItems.push(product);
   setLocalStorage("so-cart", cartItems);
-  console.log("Cart now:", cartItems);
 }
 
+// add to cart button event handler
 async function addToCartHandler(e) {
-  e.preventDefault();
   const product = await dataSource.findProductById(e.target.dataset.id);
   addProductToCart(product);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("addToCart");
-  if (button) button.addEventListener("click", addToCartHandler);
-});
+// add listener to Add to Cart button
+document
+  .getElementById("addToCart")
+  .addEventListener("click", addToCartHandler);
