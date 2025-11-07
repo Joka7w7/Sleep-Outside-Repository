@@ -64,4 +64,4 @@ function productDetailsTemplate(product) {
 //       <button id="addToCart" data-id="${product.Id}">Add to Cart</button>
 //     </div></section>`;
 // }
-// ***************************************************************************
+// ****************************************************************************
