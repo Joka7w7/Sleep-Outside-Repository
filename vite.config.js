@@ -11,7 +11,7 @@ export default defineConfig({
         main: "src/index.html",
         product: "src/product_pages/index.html",
         cart: "src/cart/index.html",
-        checkout: "src/checkout/index.html"
+        checkout: "src/checkout/index.html",
       },
     },
   },
