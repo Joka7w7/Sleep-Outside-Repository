@@ -90,7 +90,7 @@ p {
   margin-top: -1.3em;
 }
 
-.logo--square > div {
+.logo--square>div {
   margin-top: -1.7em;
 }
 
@@ -260,4 +260,35 @@ button {
 footer {
   font-size: var(--small-font);
   padding: 1em;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #555;
+  list-style: none;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: #e63946;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-card__old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
 }
