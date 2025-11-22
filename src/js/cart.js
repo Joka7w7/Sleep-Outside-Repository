@@ -9,5 +9,3 @@ cart.init();
 if (cart.total > 0) {
   document.querySelector(".list-footer").classList.remove("hide");
 }
-
-
